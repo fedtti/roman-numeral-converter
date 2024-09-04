@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+3:wght@700&family=Source+Serif+4:opsz,wght@8..60,200..900&display=swap');
+
+:root {
+    --primary-background-color: #081e33;
+               --primary-color: white;
+  --secondary-background-color: #f4f1ed;
+             --secondary-color: #406080;
+  --highlight-background-color: #c9b8a3;
+             --highlight-color: #790000;
+}
+
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100vh;
+  width: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  align-items: center;
+  background-color: var(--primary-background-color);
+  color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  font: normal 400 1rem/1 'Source Serif 4', serif;
+  justify-content: center;
+}
+
+/* HEADER */
+header {
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 4.8rem;
+  margin-bottom: 2.4rem;
+}
+
+/* CONTENTS */
+main {
+  margin: 0 auto;
+  padding: 1.6rem;
+  text-align: center;
+  width: 100%;
+}
+
+form {
+  background-color: #f4f1ed;
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 1.6rem 2.4rem;
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  color: var(--primary-background-color);
+  font-family: 'Playfair Display', serif;
+  font-size: 2.4rem;
+}
+
+input, button {
+  appearance: none;
+  border: none;
+  color: var(--primary-background-color);
+  display: block;
+  height: 4.8rem;
+  outline: none;
+  padding: 1.2rem 2.4rem;
+}
+
+input {
+  font-family: inherit;
+  margin: 1.6rem 0;
+  width: 100%;
+}
+
+input::placeholder {
+  color: var(--secondary-color);
+}
+
+button {
+  background-color: var(--highlight-background-color);
+  cursor: pointer;
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+button:active, button:focus, button:hover {
+  background-color: var(--primary-background-color);
+  color: var(--primary-color);
+}
+
+aside {
+  color: var(--highlight-background-color);
+  font-size: 3.2rem;
+  font-weight: 600;
+  letter-spacing: 0.4rem;
+  margin: 2.4rem 0;
+}
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  top: auto;
+  overflow: hidden;
+}
+
+.error {
+  color: var(--highlight-color);
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: normal;
+}
+
+@media only screen and (min-width: 576px) {
+  form {
+    max-width: 54rem;
+  }
+}

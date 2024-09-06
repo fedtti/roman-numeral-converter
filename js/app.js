@@ -74,7 +74,7 @@ const update = () => {
   }
 };
 
-input.addEventListener('keydown', event => {
+number.addEventListener('keydown', event => {
   if (event.key === 'Enter') {
     update();
   }

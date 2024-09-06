@@ -76,8 +76,9 @@ const update = () => {
 
 number.addEventListener('keydown', event => {
   if (event.key === 'Enter') {
+    event.preventDefault();
     update();
   }
-});
+}, false);
 
 convertButton.addEventListener('click', update, false);

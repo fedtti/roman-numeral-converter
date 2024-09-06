@@ -1,4 +1,4 @@
-const input = document.getElementById('number');
+const number = document.getElementById('number');
 const convertButton = document.getElementById('convert-btn');
 const output = document.getElementById('output');
 const reference = [
@@ -64,7 +64,7 @@ const convertDecimalToNumeral = integer => {
  * Update the UI with either an error message or the converted numeral.
  */
 const update = () => {
-  const string = input.value;
+  const string = number.value;
   const integer = parseInt(string, 10);
 
   output.innerHTML = '';
